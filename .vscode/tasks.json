@@ -2,8 +2,16 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
+			"label": "Run Active C++ exe",
+			"type": "shell",
+			"command": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+			"problemMatcher": [
+				"$gcc"
+			]
+		},
+		{
 			"type": "cppbuild",
-			"label": "C/C++: Build",
+			"label": "C/C++: g++.exe build active file",
 			"command": "C:\\Users\\Xiaok\\Documents\\PROGRAM\\MSYS2\\mingw64\\bin\\g++.exe",
 			"args": [
 				"-fdiagnostics-color=always",
@@ -19,7 +27,7 @@
 				"$gcc"
 			],
 			"group": "build",
-			"detail": "编译器: C:\\Users\\Xiaok\\Documents\\PROGRAM\\MSYS2\\mingw64\\bin\\g++.exe"
+			"detail": "compiler: C:\\Users\\Xiaok\\Documents\\PROGRAM\\MSYS2\\mingw64\\bin\\g++.exe"
 		}
 	]
 }
