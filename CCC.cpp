@@ -1,8 +1,8 @@
 #include <iostream>
-
+#include <stdlib.h>
 using namespace std;
 int main()
 {
-    cout << "你好" << endl;
+    cout << "Hello world";
     return 0;
 }
