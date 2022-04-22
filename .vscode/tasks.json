@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "cppbuild",
-			"label": "C/C++: g++.exe build active file",
+			"label": "C/C++: Build",
 			"command": "C:\\Users\\Xiaok\\Documents\\PROGRAM\\MSYS2\\mingw64\\bin\\g++.exe",
 			"args": [
 				"-fdiagnostics-color=always",
@@ -26,7 +26,10 @@
 			"problemMatcher": [
 				"$gcc"
 			],
-			"group": "build",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
 			"detail": "compiler: C:\\Users\\Xiaok\\Documents\\PROGRAM\\MSYS2\\mingw64\\bin\\g++.exe"
 		}
 	]
