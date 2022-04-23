@@ -1,2 +1,2 @@
 #lang sicp
-"hello world!"
+"你好"
