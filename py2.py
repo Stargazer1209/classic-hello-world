@@ -1,2 +1,2 @@
-n = input()
-print(n)
+#encoding=GBK
+print("ÄãºÃÊÀ½ç")

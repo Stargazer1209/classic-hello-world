@@ -1,36 +1,37 @@
 {
 	"version": "2.0.0",
-	"tasks": [
-		{
-			"label": "Run Active C++ exe",
-			"type": "shell",
-			"command": "${fileDirname}\\${fileBasenameNoExtension}.exe",
-			"problemMatcher": [
-				"$gcc"
-			]
-		},
-		{
-			"type": "cppbuild",
-			"label": "C/C++: Build",
-			"command": "C:\\Users\\Xiaok\\Documents\\PROGRAM\\MSYS2\\mingw64\\bin\\g++.exe",
-			"args": [
-				"-fdiagnostics-color=always",
-				"-g",
-				"${file}",
-				"-o",
-				"${fileDirname}\\${fileBasenameNoExtension}.exe"
-			],
-			"options": {
-				"cwd": "${fileDirname}"
-			},
-			"problemMatcher": [
-				"$gcc"
-			],
-			"group": {
-				"kind": "build",
-				"isDefault": true
-			},
-			"detail": "compiler: C:\\Users\\Xiaok\\Documents\\PROGRAM\\MSYS2\\mingw64\\bin\\g++.exe"
+	"windows": {
+	  "options": {
+		"shell": {
+		  "executable": "cmd.exe",
+		  "args": [
+			"/utf8",
+			"/C",
+			// The path to VsDevCmd.bat depends on the version of Visual Studio you have installed.
+			"\"C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/VsDevCmd.bat\"",
+			"&&"
+		  ]
 		}
+	  }
+	},
+	"tasks": [
+	  {
+		"type": "shell",
+		"label": "cl.exe build active file",
+		"command": "cl.exe",
+		"args": [
+		  "/utf8",
+		  "/Zi",
+		  "/EHsc",
+		  "/Fe:",
+		  "${fileDirname}\\${fileBasenameNoExtension}.exe",
+		  "${file}"
+		],
+		"problemMatcher": ["$msCompile"],
+		"group": {
+		  "kind": "build",
+		  "isDefault": true
+		}
+	  }
 	]
-}
+  }
