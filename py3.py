@@ -1,1 +1,3 @@
-print("你好")
+a, b = 1, 2
+print(a, end=""),
+print(a, end=""),
