@@ -12,6 +12,5 @@ int main()
     {
         cout << word << " ";
     }
-    cout << "你好" << endl;
-    return 0;
+    cout << endl;
 }
