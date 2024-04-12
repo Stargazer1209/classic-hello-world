@@ -1,1 +1,3 @@
-Hello world environment test for serveral languages.
+Hello world for serveral languages.
+
+多种编程语言的hello-world程序。
